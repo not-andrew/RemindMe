@@ -1,0 +1,116 @@
+.delete_button
+{
+    transition-duration: 0.4s;
+    background-color: inherit;
+    background-image: url('../assets/delete.svg');
+    background-size:auto;
+
+    border: none;
+    width: 1.6em;
+    height: 1.6em;
+    float:right;
+    margin-top: 2%;
+    margin-right: 2%;
+    opacity: 50%;
+    
+}
+
+.delete_button:hover
+{
+    opacity: 100%;
+    cursor:pointer;
+}
+
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    /* Styling checkbox */
+    transition: 0.4s;
+    width: 16px;
+    height: 16px;
+    background-color: #9c6b60;
+    border-radius: 8px;
+    margin-left:6px;
+    margin-top:4px;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color:#F06A4D !important;
+  }
+
+  input[type="checkbox"]:hover {
+    background-color:#bd6b59;
+    cursor: pointer;
+  }
+
+  .done_button
+{
+    transition-duration: 0.4s;
+    background-color: inherit;
+    background-image: url('../assets/done.svg');
+    background-size:auto;
+    opacity: 20%;
+
+    border: none;
+    width: 1.6em;
+    height: 1.6em;
+    float:left;
+    margin-top: 2%;
+    margin-left: 5%;
+    
+    border-radius: 5px;
+}
+
+.done_button:hover
+{
+    opacity: 50% !important; 
+    cursor:pointer;
+}
+
+#deleteSelected, #deleteDone
+{
+  transition: 0.4s;
+
+  font-family: 'Montserrat';
+  text-decoration: underline;
+
+  color: gray ;
+
+  background:none;
+  border: none;
+  border-radius: 0%;
+}
+
+#deleteSelected:hover, #deleteDone:hover
+{
+  color:#bd6b59;
+
+  cursor: pointer;
+}
+
+
+#addToDoButton
+{
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    width: 10%;
+    height: 100%;
+
+    border-radius: 0;
+    border:none;
+    background-color: #dedede31;
+    color: #dedede;
+
+    transition: 0.4s;
+}
+
+#addToDoButton:hover
+{
+    background-color: #bd6b59;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/toDoList.css" />
+    <link rel="stylesheet" href="./style/buttons.css" />
+    <title>RemindMe!</title>
+</head>
+
+
+<body>
+    <h1 class="main_title">RemindMe!</h1>
+
+    <form id="toDoForm" action="none" >
+        <div class="input_element">
+            <textarea id="descriptionInput" name="description" placeholder="Enter to-do" cols="50" rows="2"></textarea>
+            <button type="submit" id="addToDoButton"> add </button>
+    </div>
+    </form>
+        
+    <table class="action_menu">
+        <tr>
+            <td><input type="checkbox" id="selectAll"><label>Select all</label> </td>
+            <td><input type="checkbox" id="showUndone"><label>Active</label></td>
+            <td><input type="checkbox" id="showDone"><label>Completed</label></td>
+            <td><input type="checkbox" id="doneAll"><label>Mark all as complete</label></td>
+            <td></td>
+            
+        </tr>
+
+        <tr>
+            <td><button id="deleteSelected">Clear selected items</button></td>
+            <td></td>
+            <td></td>
+            <td><button id="deleteDone">Clear completed items</button></td>
+        </tr>
+
+    </table>
+    
+
+    <div id="toDoSection">
+        <ul id="toDoList" class="item_list">
+            <div class="filling-empty-space-childs"></div>
+            <div class="filling-empty-space-childs"></div>
+            <div class="filling-empty-space-childs"></div>
+            <div class="filling-empty-space-childs"></div>
+        </ul>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
